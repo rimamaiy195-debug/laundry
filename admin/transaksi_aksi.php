@@ -11,7 +11,7 @@
 	$h = mysqli_query($koneksi,"select harga_per_kilo from harga");
 	$harga_per_kilo = mysqli_fetch_assoc($h);
 
-	$harga = $berat = $harga_per_kilo['harga_per_kilo'];
+	$harga = $berat * $harga_per_kilo['harga_per_kilo'];
 
 	mysqli_query($koneksi,"insert into transaksi values('','$tgl_hari_ini','$pelanggan','$harga','$berat','$tgl_selesai','$status')");
 
@@ -22,9 +22,9 @@
 
 	for ($x=0;$x<count($jenis_pakaian);$x++) { 
 		if ($jenis_pakaian[$x] != "") {
-			mysqli_query($koneksi,"insert into pakaian values('','$id_terakhir','$jenis_pakaian','$jenis_pakaian')");
+			mysqli_query($koneksi,"insert into pakaian values('','$id_terakhir','$jenis_pakaian[$x]','$jumlah_pakaian[$x]')");
 		}
 	}
 
-header("location:transaksi.php");
+	echo "<script>alert('Data Tersimpan'); window.location.href='transaksi.php'</script>";
 ?>

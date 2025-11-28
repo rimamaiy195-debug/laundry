@@ -76,15 +76,15 @@
 						?>
 						<tr>
 							<td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
-							<td><input type="number" class="form-control" name="jumlah_pakaian"></td>
+							<td><input type="number" class="form-control" name="jumlah_pakaian[]"></td>
 						</tr>
 						<tr>
 							<td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
-							<td><input type="number" class="form-control" name="jumlah_pakaian"></td>
+							<td><input type="number" class="form-control" name="jumlah_pakaian[]"></td>
 						</tr>
 						<tr>
 							<td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
-							<td><input type="number" class="form-control" name="jumlah_pakaian"></td>
+							<td><input type="number" class="form-control" name="jumlah_pakaian[]"></td>
 						</tr>
 						<tr>
 							<td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
